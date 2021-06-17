@@ -50,7 +50,7 @@
                               {versions, ['tlsv1', 'tlsv1.1', 'tlsv1.2']},
                               {port, 0}]).
 
--define(SSL_CONNECT_OPTIONS_KEYS, [ciphers]).
+-define(SSL_CONNECT_OPTIONS_KEYS, [cacertfile, cacerts, ciphers, verify, verify_fun, customize_hostname_check]).
 
 -ifdef(TEST).
 -include_lib("eunit/include/eunit.hrl").
